@@ -3,24 +3,14 @@ import Product from './Product'
 
 const Home = () => {
     return (
-        <div>
-            <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
-                <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <img src="/assets/main/image1.jpg" className="d-block w-100" alt="" />
-                    </div>
-                    <div className="carousel-item">
-                        <img src="/assets/main/image2.jpg" className="d-block w-100" alt="" />
-                    </div>
+        <div className='container'>
+            <div className="card bg-dark text-black border-0">
+                <img src="assets/main/image1.jpg" className="card-img" alt="..." height='550px' />
+                <div className="card-img-overlay d-flex flex-column justify-content">
+                    <h1 className="card-title"><b1>Products </b1></h1>
+                    <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
                 </div>
-                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Previous</span>
-                </button>
-                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Next</span>
-                </button>
             </div>
             <Product />
         </div>
