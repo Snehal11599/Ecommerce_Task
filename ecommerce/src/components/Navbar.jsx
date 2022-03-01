@@ -33,10 +33,7 @@ const Navbar = () => {
                             <a href='' className='btn btn-outline-dark ms-2'>
                             <i className="fa fa-sign-in me-1"></i>Login
                             </a>
-                            <a href='' className='btn btn-outline-dark ms-2'>
-                            <i className="fa-solid fa-cart-arrow-down"></i>Add to cart
-                            </a>
-
+                            
                      </div>
                     </div>
                 </div>
