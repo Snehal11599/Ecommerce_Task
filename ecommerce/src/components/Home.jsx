@@ -1,25 +1,25 @@
 import React, { useEffect, useState } from 'react'
 import Product from './Product'
 import Data from '../Data'
-import { useParams } from 'react-router-dom'
+
 import Review from './Review'
 
 const Home = () => {
 
-    //const { id } = useParams()
-    //const [item, setItems] = useState([])
+
+    const [item, setItems] = useState([])
     //const [loading, setLoading] = useState(false)
 
-    //useEffect(() => {
+    useEffect(() => {
     //making function for getting products
-    // const getProducts = async () => {
+    const getProducts = async () => {
     //setLoading(true)
-    //   const response = await fetch(`https://fakestoreapi.com/products`)
-    // setItems(await response.json())
+       const response = await fetch(`https://fakestoreapi.com/products`)
+     setItems(await response.json())
     //setLoading(false)
-    //}
-    //getProducts()
-    //}, [])
+    }
+    getProducts()
+    }, [])
 
 
     //this function is if products are take time to display 
@@ -31,6 +31,8 @@ const Home = () => {
     //     )
     // }
 
+
+
     return (
         <>
 
@@ -38,7 +40,7 @@ const Home = () => {
                 <div className='row'>
                     {/* {loading ? <Loading/> : <ShowProduct/>} */}
 
-                    {Data.map((data) => {
+                    {item.map((data) => {
                         return (
                             <>
                                 <div className='col-md-6 py-5 ' key={data.id} style={{ border: "groove" }}>

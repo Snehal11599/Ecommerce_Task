@@ -6,7 +6,7 @@ const Navbar = () => {
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-light py-3 shadow-sm">
                 <div className="container">
-                    <NavLink className="navbar-brand fw-bold fs-4" to="#">Electrical Products</NavLink>
+                    <NavLink className="navbar-brand fw-bold fs-4" to="/">Electrical Products</NavLink>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -27,13 +27,15 @@ const Navbar = () => {
                         </ul>
                         
                         <div className='buttons'>
-                            <a href='' className='btn btn-outline-dark'>
+                            <NavLink to='' className='btn btn-outline-dark'>
                             <i className="fa-solid fa-user-plus"></i>Register
-                            </a>
-                            <a href='' className='btn btn-outline-dark ms-2'>
+                            </NavLink>
+                            <NavLink to='' className='btn btn-outline-dark ms-2'>
                             <i className="fa fa-sign-in me-1"></i>Login
-                            </a>
-                            
+                            </NavLink>
+                            <NavLink to='' className='btn btn-outline-dark ms-2'>
+                            <i className="fa-solid fa-cart-arrow-down"></i>Add to cart
+                            </NavLink>
                      </div>
                     </div>
                 </div>
